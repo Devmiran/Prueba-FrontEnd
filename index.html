@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Mision 2 </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(220, 255, 247);
+        }
+
+        nav {
+            border-radius: 16px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 50px;
+        }
+
+        .container-general {
+            margin-left: 40px;
+            margin-right: 40px;
+
+        }
+
+        .prueba {
+            justify-content: right;
+            text-align: center;
+        }
+
+        .modal {
+            height: 2100px;
+            position: absolute;
+            top: -2100px;
+
+        }
+
+        .modal {
+            background-color: rgba(0, 0, 0, 0.548);
+            border: solid 1px;
+            height: 2100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .moda-pedido {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: fit-content;
+            padding: 90px;
+        }
+
+        .navbar-brand {
+
+            border-radius: 12px;
+            background-color: gainsboro;
+
+        }
+
+        li>a:hover {
+            display: block;
+        }
+
+        .nav-link {
+            color: rgb(27, 27, 158);
+        }
+
+        .nav-item {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+
+        #gris {
+            color: rgb(190, 183, 183);
+
+        }
+
+        #medio {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        #productos{
+         margin-left: 40px;
+         margin-right: 40px;
+        }
+
+        .para{
+            color:rgb(27, 27, 143);
+        }
+
+       
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-white fs-4">
+        <div class="container-fluid " id="inicio">
+            <a class="navbar-brand style=bg-light color=text-primary" href="#" id="b">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" aria-current="page" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Compras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Inventario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Ventas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" role="button" aria-expanded="false">
+                            Adicionales
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#perfil"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-person-fill"
+                                viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                            </svg>Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-general">
+
+        <!-- 
+///MEDIO// -->
+        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row bg mt-5" id="productos">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-12">
+                        <h2 class="mb-3 text-md-start text-primary" id="acerca">Productos <i id="gris"># de items</i></h2>
+                    </div>
+                </div>
+
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                     <div class="d-flex justify-content-center mt-50px">Filtro<svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                        <path
+                            d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                     </svg>
+                    </div>
+                </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 text-wrap fs-5">
+                        <form class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 text-wrap fs-5">
+                            <div class="mb-3 text-md-center">
+                                <label for="buscador" class="form-label"></label>
+                                <input type="text" id="buscador" class="form-control" placeholder="placeholder-input">
+                            </div>
+                        </form>
+                    </div>
+              
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="mb-6 text-md-end ">
+                        <button type="button" class="btn btn-info bg-range" class="d-flex jalign-items-center"><a
+                                href="#eliminar" style="text-decoration:none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                    <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                  </svg></a></button>
+
+
+                        <button type="button" class="btn btn-info" class="d-flex jalign-items-center"  id="agregar"><a
+                                href="#nuevoproduc" style="text-decoration:none">Agregar nuevo producto</a></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!--  //TITULO DE TARGETAS -->
+        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row bg para">
+
+                <!--  DATOS -->
+                <div class="col-xxl-1 col-xl-1 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="mt-3">
+                        <h3>ID</h3>
+                    </div>
+                </div>
+                <div class="col-xxl-1 col-xl-1 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class=" mt-3">
+                        <h3>Imagen</h3>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-1 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="mt-3">
+
+                        <h3>UID</h3>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-1 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="mt-3">
+                        <h3>Referencia</h3>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-1 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="mt-3">
+                        <h3>Nombre</h3>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-1 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="mt-3">
+                        <h3>Categoria</h3>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-1 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="mt-3">
+                        <h3>Subcategoria</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+
+
+    <div class="col-12" id="personas-list">
+
+        <div class="modal">
+            <div class="moda-pedido" id="personas-list">
+                <h3 class="text-success"> INFORMACION DE USUARIO </h3>
+                <P class="text-primary"> Ingrese los datos.</P>
+                <form action="index.html" id="personas-form" class="card-body">
+                    <div class="form-group">
+                        <input type="text" id="nombre" class="form-control mt-3" placeholder="Nombre" required max="50">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="categoria" class="form-control mt-3" placeholder="categoria" required
+                            max="50">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="referencia" class="form-control mt-3" placeholder="referencia" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subcategoria" class="form-control mt-3" placeholder="subrefencia">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <input type="submit" value="REGISTRAR" class=btn-primary btn-block>
+                    </div>
+                </form>
+                <div class="grupo-uno" id="modal">
+                    <button id="cancelar"> Cancelar </button>
+                    <button id="aceptar"> Aceptar </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div id="formulariooo">
+
+
+    <div class="col-12" id="formulariooo">
+
+
+    </div>
+
+
+    <!--   //FOOTER -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
